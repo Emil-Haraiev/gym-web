@@ -1,7 +1,9 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
+import Benefits from "@/scenes/benefits";
 import {useEffect, useState} from "react";
 import {SelectedPage} from "@/shared/types.ts";
+
 
 
 
@@ -29,10 +31,8 @@ function App() {
      <Navbar selectedPage={selectedPage}
              setSelectedPage={setSelectedPage}
              isTopOfPage={isTopOfPage}/>
-     <Home
-         selectedPage={selectedPage}
-         setSelectedPage={setSelectedPage}
-     />
+     <Home setSelectedPage={setSelectedPage}/>
+     <Benefits setSelectedPage={setSelectedPage}/>
  </div>
 )}
 export default App

@@ -10,7 +10,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import {motion} from "framer-motion";
 
 type Props = {
-    selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
 }
 
